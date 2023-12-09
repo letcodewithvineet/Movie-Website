@@ -1,8 +1,12 @@
-// script.js
 const APIURL = "https://api.themoviedb.org/3/discover/movie?api_key=04c35731a5ee918f014970082a0088b1";
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?api_key=04c35731a5ee918f014970082a0088b1&query=";
 const PAGE_SIZE = 20; // Set the number of movies per page
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Update the footer year
+document.getElementById('year').textContent = currentYear;
 
 const form = document.getElementById("form");
 const search = document.getElementById("search");

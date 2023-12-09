@@ -182,4 +182,13 @@ div {
 .active {
     font-weight: bold;
 }
-    
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
