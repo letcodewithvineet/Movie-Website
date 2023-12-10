@@ -10,24 +10,73 @@ body {
 }
 
 header {
-    background-color: #45a049;
+    background-color: #000;
     display: flex;
     justify-content: space-between; /* Align items horizontally */
     align-items: center; /* Center items vertically */
-    padding: 1rem;
+    padding: 0.1rem;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    /* flex-direction: column; */
+    margin-left: 1rem;
+    align-items: center;
+}
+
+#menuIcon {
+    cursor: pointer;
+    display: flex;
+    margin-left: 1rem;
+    align-items: center;
+}
+
+.menuBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.show-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
 }
 
 h1 {
-    color: whitesmoke;
+    color: #000;
     align-self: center;
     margin-left: 28rem;
-    font-size: 30px;
-    font-size: 3.0vw; /* Use vw units for responsive font size */
+    font-size: 1rem;
+    font-size: 1.6vw; /* Use vw units for responsive font size */
     animation: fadeInUp 1s ease-in-out; /* Add animation */
+    background-color: goldenrod;
+    border-radius: 5px;
+    margin: 0;
+}
+
+h4 {
+    color: #fff;
+    align-self: center;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-size: 1.6vw; /* Use vw units for responsive font size */
+    border-radius: 5px;
+    margin: 0;
+    margin-left: 0.2rem;
 }
 
 form {
     display: flex;
+    align-items: center; /* Center items vertically */
 }
 
 @keyframes fadeInUp {
@@ -43,10 +92,10 @@ form {
 
 .search {
     margin-left: 1rem;
-    background-color: transparent;
-    border: 2px solid #e9e9ec;
-    border-radius: 50px;
-    color: #fff;
+    background-color: #f0f0f0;
+    border: 2px solid goldenrod;
+    border-radius: 30px;
+    color: #000;
     font-family: inherit;
     font-size: 1rem;
     padding: 0.5rem 1rem;
@@ -59,13 +108,13 @@ form {
 }
 
 .search::placeholder {
-    color: #fff;
+    color: #000;
 }
 
-.search:focus {
+/* .search:focus {
     background-color: goldenrod;
     outline: none;
-}
+} */
 
 #content {
     display: flex;
@@ -89,11 +138,11 @@ div {
     overflow: hidden;
     transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
     cursor: pointer;
-    perspective: 1000px; /* Add perspective for 3D effect */
+    /* perspective: 1000px; Removed perspective for 3D effect */
 }
 
 .movie:hover {
-    transform: scale(1.05) rotateY(180deg);
+    /* transform: scale(1.05) rotateY(180deg); */ /* Removed 3D effect */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
@@ -107,8 +156,8 @@ div {
 
 .movie-info {
     padding: 1rem;
-    transform-style: preserve-3d; /* Preserve 3D transformations */
-    backface-visibility: hidden; /* Hide back face during 3D transformations */
+    /* transform-style: preserve-3d; */ /* Removed 3D effect */
+    /* backface-visibility: hidden; */ /* Removed 3D effect */
 }
 
 .movie-title {
@@ -184,11 +233,13 @@ div {
 }
 
 footer {
-    background-color: #f8f9fa;
+    background-color: #333;
     padding: 20px;
     text-align: center;
+    color: #fff;
 }
 
 footer p {
     margin: 0;
+    
 }

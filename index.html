@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">    
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> IMDb Clone App</title>
-    </head>
-    <body>
-        <header>
-            <h1>Mini IMDb Movies APP</h1>
-            <form id="form">
-                <input type="text" id="search" placeholder="Search for a movie..." class="search">
-            </form>
-        </header>
+<html lang="en">
 
-        <div id="content"></div>
-        
-        <div id="pagination"></div>
-        <footer id="footer">&copy; <span id="year"></span> My Website. All rights reserved.</footer>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IMDb Clone App</title>
+</head>
 
-        <script src="script.js"></script>
-    </body>
-  
+<body>
+    <header>
+        <!-- Add an ID to the menu icon -->
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+            <div class="menuBar">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div>
+                <h4>Menu</h4>
+            </div>
+        </div>
+
+        <h1>IMDb</h1>
+        <form id="form">
+            <input type="text" id="search" placeholder="Search for a movie..." class="search">
+        </form>
+    </header>
+
+    <div id="content"></div>
+
+    <div id="pagination"></div>
+
+    <footer id="footer">&copy; <span id="year"></span> IMDb Clone App. All rights reserved.</footer>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
